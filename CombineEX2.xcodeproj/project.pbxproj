@@ -14,6 +14,10 @@
 		3B0193E82B34600100007083 /* CombineEX2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B0193E62B34600100007083 /* CombineEX2.xcdatamodeld */; };
 		3B0193EA2B34600300007083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0193E92B34600300007083 /* Assets.xcassets */; };
 		3B0193ED2B34600300007083 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0193EB2B34600300007083 /* LaunchScreen.storyboard */; };
+		3B0193F52B34606200007083 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0193F42B34606200007083 /* APIManager.swift */; };
+		3B0193F72B34614F00007083 /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0193F62B34614F00007083 /* ViewControllerViewModel.swift */; };
+		3B0193F92B3461F900007083 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0193F82B3461F900007083 /* CoinData.swift */; };
+		3B0193FB2B34679100007083 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0193FA2B34679100007083 /* AppContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		3B0193E92B34600300007083 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B0193EC2B34600300007083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B0193EE2B34600300007083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B0193F42B34606200007083 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		3B0193F62B34614F00007083 /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
+		3B0193F82B3461F900007083 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
+		3B0193FA2B34679100007083 /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +69,15 @@
 				3B0193DD2B34600100007083 /* AppDelegate.swift */,
 				3B0193DF2B34600100007083 /* SceneDelegate.swift */,
 				3B0193E12B34600100007083 /* ViewController.swift */,
+				3B0193F62B34614F00007083 /* ViewControllerViewModel.swift */,
+				3B0193F42B34606200007083 /* APIManager.swift */,
 				3B0193E32B34600100007083 /* Main.storyboard */,
 				3B0193E92B34600300007083 /* Assets.xcassets */,
 				3B0193EB2B34600300007083 /* LaunchScreen.storyboard */,
 				3B0193EE2B34600300007083 /* Info.plist */,
 				3B0193E62B34600100007083 /* CombineEX2.xcdatamodeld */,
+				3B0193F82B3461F900007083 /* CoinData.swift */,
+				3B0193FA2B34679100007083 /* AppContext.swift */,
 			);
 			path = CombineEX2;
 			sourceTree = "<group>";
@@ -141,8 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0193F92B3461F900007083 /* CoinData.swift in Sources */,
+				3B0193FB2B34679100007083 /* AppContext.swift in Sources */,
 				3B0193E22B34600100007083 /* ViewController.swift in Sources */,
+				3B0193F72B34614F00007083 /* ViewControllerViewModel.swift in Sources */,
 				3B0193DE2B34600100007083 /* AppDelegate.swift in Sources */,
+				3B0193F52B34606200007083 /* APIManager.swift in Sources */,
 				3B0193E02B34600100007083 /* SceneDelegate.swift in Sources */,
 				3B0193E82B34600100007083 /* CombineEX2.xcdatamodeld in Sources */,
 			);
