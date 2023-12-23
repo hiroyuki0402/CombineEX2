@@ -14,10 +14,15 @@
 		3B0193E82B34600100007083 /* CombineEX2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B0193E62B34600100007083 /* CombineEX2.xcdatamodeld */; };
 		3B0193EA2B34600300007083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0193E92B34600300007083 /* Assets.xcassets */; };
 		3B0193ED2B34600300007083 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0193EB2B34600300007083 /* LaunchScreen.storyboard */; };
-		3B0193F52B34606200007083 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0193F42B34606200007083 /* APIManager.swift */; };
 		3B0193F72B34614F00007083 /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0193F62B34614F00007083 /* ViewControllerViewModel.swift */; };
 		3B0193F92B3461F900007083 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0193F82B3461F900007083 /* CoinData.swift */; };
 		3B0193FB2B34679100007083 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0193FA2B34679100007083 /* AppContext.swift */; };
+		3B0193FD2B36C34B00007083 /* UnSplashData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0193FC2B36C34B00007083 /* UnSplashData.swift */; };
+		3BF1D1D12B36CDA400798117 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1D1CF2B36CD7F00798117 /* APIManager.swift */; };
+		3BF1D1D42B36EB6200798117 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1D1D22B36EB6200798117 /* TestCell.swift */; };
+		3BF1D1D52B36EB6200798117 /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BF1D1D32B36EB6200798117 /* TestCell.xib */; };
+		3BF1D1E32B36FCDE00798117 /* UnSplash-AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1D1E22B36FCDE00798117 /* UnSplash-AppContext.swift */; };
+		3BF1D1E52B36FD0000798117 /* Coin-AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1D1E42B36FD0000798117 /* Coin-AppContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +35,15 @@
 		3B0193E92B34600300007083 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B0193EC2B34600300007083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B0193EE2B34600300007083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B0193F42B34606200007083 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		3B0193F62B34614F00007083 /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
 		3B0193F82B3461F900007083 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 		3B0193FA2B34679100007083 /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
+		3B0193FC2B36C34B00007083 /* UnSplashData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnSplashData.swift; sourceTree = "<group>"; };
+		3BF1D1CF2B36CD7F00798117 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		3BF1D1D22B36EB6200798117 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
+		3BF1D1D32B36EB6200798117 /* TestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
+		3BF1D1E22B36FCDE00798117 /* UnSplash-AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UnSplash-AppContext.swift"; sourceTree = "<group>"; };
+		3BF1D1E42B36FD0000798117 /* Coin-AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coin-AppContext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,18 +78,111 @@
 			children = (
 				3B0193DD2B34600100007083 /* AppDelegate.swift */,
 				3B0193DF2B34600100007083 /* SceneDelegate.swift */,
-				3B0193E12B34600100007083 /* ViewController.swift */,
-				3B0193F62B34614F00007083 /* ViewControllerViewModel.swift */,
-				3B0193F42B34606200007083 /* APIManager.swift */,
-				3B0193E32B34600100007083 /* Main.storyboard */,
-				3B0193E92B34600300007083 /* Assets.xcassets */,
-				3B0193EB2B34600300007083 /* LaunchScreen.storyboard */,
 				3B0193EE2B34600300007083 /* Info.plist */,
-				3B0193E62B34600100007083 /* CombineEX2.xcdatamodeld */,
-				3B0193F82B3461F900007083 /* CoinData.swift */,
-				3B0193FA2B34679100007083 /* AppContext.swift */,
+				3BF1D1D62B36F4E400798117 /* Model */,
+				3BF1D1D82B36F4F300798117 /* View */,
+				3BF1D1D72B36F4E900798117 /* ViewModel */,
+				3BF1D1DA2B36F9BE00798117 /* Service */,
+				3BF1D1D92B36F4FF00798117 /* Supporting */,
 			);
 			path = CombineEX2;
+			sourceTree = "<group>";
+		};
+		3BF1D1D62B36F4E400798117 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BF1D1DE2B36FC2A00798117 /* Data */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BF1D1D72B36F4E900798117 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B0193F62B34614F00007083 /* ViewControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3BF1D1D82B36F4F300798117 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BF1D1DF2B36FC4800798117 /* LaunchScreen */,
+				3BF1D1DC2B36FBFB00798117 /* Main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BF1D1D92B36F4FF00798117 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				3B0193E92B34600300007083 /* Assets.xcassets */,
+				3B0193E62B34600100007083 /* CombineEX2.xcdatamodeld */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		3BF1D1DA2B36F9BE00798117 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3BF1D1CF2B36CD7F00798117 /* APIManager.swift */,
+				3B0193FA2B34679100007083 /* AppContext.swift */,
+				3BF1D1E12B36FCB000798117 /* Coin */,
+				3BF1D1E02B36FCAB00798117 /* UnSplash */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3BF1D1DC2B36FBFB00798117 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3BF1D1DD2B36FC0E00798117 /* TableViewCell */,
+				3B0193E12B34600100007083 /* ViewController.swift */,
+				3B0193E32B34600100007083 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3BF1D1DD2B36FC0E00798117 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3BF1D1D22B36EB6200798117 /* TestCell.swift */,
+				3BF1D1D32B36EB6200798117 /* TestCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		3BF1D1DE2B36FC2A00798117 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3B0193FC2B36C34B00007083 /* UnSplashData.swift */,
+				3B0193F82B3461F900007083 /* CoinData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3BF1D1DF2B36FC4800798117 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3B0193EB2B34600300007083 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		3BF1D1E02B36FCAB00798117 /* UnSplash */ = {
+			isa = PBXGroup;
+			children = (
+				3BF1D1E22B36FCDE00798117 /* UnSplash-AppContext.swift */,
+			);
+			path = UnSplash;
+			sourceTree = "<group>";
+		};
+		3BF1D1E12B36FCB000798117 /* Coin */ = {
+			isa = PBXGroup;
+			children = (
+				3BF1D1E42B36FD0000798117 /* Coin-AppContext.swift */,
+			);
+			path = Coin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B0193ED2B34600300007083 /* LaunchScreen.storyboard in Resources */,
+				3BF1D1D52B36EB6200798117 /* TestCell.xib in Resources */,
 				3B0193EA2B34600300007083 /* Assets.xcassets in Resources */,
 				3B0193E52B34600100007083 /* Main.storyboard in Resources */,
 			);
@@ -156,11 +260,15 @@
 				3B0193F92B3461F900007083 /* CoinData.swift in Sources */,
 				3B0193FB2B34679100007083 /* AppContext.swift in Sources */,
 				3B0193E22B34600100007083 /* ViewController.swift in Sources */,
+				3BF1D1D12B36CDA400798117 /* APIManager.swift in Sources */,
+				3BF1D1E32B36FCDE00798117 /* UnSplash-AppContext.swift in Sources */,
 				3B0193F72B34614F00007083 /* ViewControllerViewModel.swift in Sources */,
 				3B0193DE2B34600100007083 /* AppDelegate.swift in Sources */,
-				3B0193F52B34606200007083 /* APIManager.swift in Sources */,
 				3B0193E02B34600100007083 /* SceneDelegate.swift in Sources */,
+				3BF1D1E52B36FD0000798117 /* Coin-AppContext.swift in Sources */,
+				3BF1D1D42B36EB6200798117 /* TestCell.swift in Sources */,
 				3B0193E82B34600100007083 /* CombineEX2.xcdatamodeld in Sources */,
+				3B0193FD2B36C34B00007083 /* UnSplashData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
