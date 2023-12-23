@@ -20,7 +20,7 @@ struct UnSplashData: Codable {
 }
 
 // MARK: - Result
-struct Result: Codable {
+struct Result: Codable, Identifiable {
     let id, slug: String?
     let createdAt, updatedAt: String?
     let promotedAt: String?

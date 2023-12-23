@@ -5,10 +5,11 @@
 //  Created by SHIRAISHI HIROYUKI on 2023/12/21.
 //
 
+import SwiftUI
 import Foundation
 import Combine
 
-class ViewControllerViewModel {
+class ViewControllerViewModel: ObservableObject {
     // MARK: - プロパティー
 
     @Published var coindatas: CoinDatas = []
@@ -26,13 +27,17 @@ class ViewControllerViewModel {
         /// コインデータのロード
         AppContext.shared.loadCoinDatas { coinData, _ in
             guard let coinData = coinData else { return }
-            self.coindatas = coinData
+            DispatchQueue.main.async {
+                self.coindatas = coinData
+            }
         }
 
         /// UnSplashのデータを表示
         AppContext.shared.loadUnSplashDatas { unSplashData, error in
             guard let unSplashData = unSplashData else { return }
-            self.unSplashDatas = unSplashData.results
+            DispatchQueue.main.async {
+                self.unSplashDatas = unSplashData.results
+            }
         }
     }
 
