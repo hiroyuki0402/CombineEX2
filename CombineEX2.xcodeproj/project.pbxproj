@@ -44,6 +44,7 @@
 		3BF1D1D32B36EB6200798117 /* TestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
 		3BF1D1E22B36FCDE00798117 /* UnSplash-AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UnSplash-AppContext.swift"; sourceTree = "<group>"; };
 		3BF1D1E42B36FD0000798117 /* Coin-AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coin-AppContext.swift"; sourceTree = "<group>"; };
+		3BF1D1E62B3701F400798117 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 		3B0193D12B34600100007083 = {
 			isa = PBXGroup;
 			children = (
+				3BF1D1E62B3701F400798117 /* README.md */,
 				3B0193DC2B34600100007083 /* CombineEX2 */,
 				3B0193DB2B34600100007083 /* Products */,
 			);
