@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import SwiftUI
 
 class ViewController: UIViewController {
     // MARK: - プロパティー
@@ -18,6 +19,10 @@ class ViewController: UIViewController {
     private var cancellables: Set<AnyCancellable> = []
 
     @IBOutlet weak var tableView: UITableView!
+
+    private var isShowingUpBUtton: Bool = false
+
+    private var upButton: UIImageView?
 
     // MARK: - ライフサイクル
 
@@ -76,9 +81,18 @@ class ViewController: UIViewController {
         upIconView.addGestureRecognizer(tapGesture)
 
         upIconView.backgroundColor = .clear
+        upButton = upIconView
     }
 
     // MARK: - ハンドラー
+
+    /// SwiftUIで作成した画面へ遷移
+    @IBAction func moveToMainBySwiftUI(_ sender: Any) {
+        let swiftUIView = MainSwiftUI()
+        let hostingController = UIHostingController(rootView: swiftUIView)
+        self.present(hostingController, animated: true, completion: nil)
+    }
+    
 
     /// セルを上部に戻す
     @objc func upcell(sender: UITapGestureRecognizer) {
@@ -86,6 +100,18 @@ class ViewController: UIViewController {
             print(IndexPath())
             tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
             createData()
+        }
+    }
+}
+
+// MARK: - UIScrollView
+
+extension ViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if let upButton = upButton, scrollView.contentOffset.y > 0 {
+            upButton.isHidden = false
+        } else {
+            upButton?.isHidden = true
         }
     }
 }

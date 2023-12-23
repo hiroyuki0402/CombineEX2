@@ -23,6 +23,11 @@
 		3BF1D1D52B36EB6200798117 /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BF1D1D32B36EB6200798117 /* TestCell.xib */; };
 		3BF1D1E32B36FCDE00798117 /* UnSplash-AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1D1E22B36FCDE00798117 /* UnSplash-AppContext.swift */; };
 		3BF1D1E52B36FD0000798117 /* Coin-AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1D1E42B36FD0000798117 /* Coin-AppContext.swift */; };
+		3BF1D1E82B3716AA00798117 /* MainSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1D1E72B3716AA00798117 /* MainSwiftUI.swift */; };
+		3BF1D1EC2B371AA500798117 /* MainSwiftItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1D1EB2B371AA500798117 /* MainSwiftItem.swift */; };
+		3BF1D1EF2B371CEA00798117 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF1D1EE2B371CEA00798117 /* Kingfisher */; };
+		3BF1D1F12B371CFF00798117 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1D1F02B371CFF00798117 /* ImageManager.swift */; };
+		3BF1D1F42B371D4F00798117 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1D1F32B371D4F00798117 /* UserDefaultsKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +50,10 @@
 		3BF1D1E22B36FCDE00798117 /* UnSplash-AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UnSplash-AppContext.swift"; sourceTree = "<group>"; };
 		3BF1D1E42B36FD0000798117 /* Coin-AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coin-AppContext.swift"; sourceTree = "<group>"; };
 		3BF1D1E62B3701F400798117 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3BF1D1E72B3716AA00798117 /* MainSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSwiftUI.swift; sourceTree = "<group>"; };
+		3BF1D1EB2B371AA500798117 /* MainSwiftItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSwiftItem.swift; sourceTree = "<group>"; };
+		3BF1D1F02B371CFF00798117 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		3BF1D1F32B371D4F00798117 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF1D1EF2B371CEA00798117 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +96,7 @@
 				3BF1D1D72B36F4E900798117 /* ViewModel */,
 				3BF1D1DA2B36F9BE00798117 /* Service */,
 				3BF1D1D92B36F4FF00798117 /* Supporting */,
+				3BF1D1F22B371D3D00798117 /* Util */,
 			);
 			path = CombineEX2;
 			sourceTree = "<group>";
@@ -109,6 +120,7 @@
 		3BF1D1D82B36F4F300798117 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3BF1D1E92B371A7100798117 /* MainSwiftUI */,
 				3BF1D1DF2B36FC4800798117 /* LaunchScreen */,
 				3BF1D1DC2B36FBFB00798117 /* Main */,
 			);
@@ -128,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				3BF1D1CF2B36CD7F00798117 /* APIManager.swift */,
+				3BF1D1F02B371CFF00798117 /* ImageManager.swift */,
 				3B0193FA2B34679100007083 /* AppContext.swift */,
 				3BF1D1E12B36FCB000798117 /* Coin */,
 				3BF1D1E02B36FCAB00798117 /* UnSplash */,
@@ -187,6 +200,31 @@
 			path = Coin;
 			sourceTree = "<group>";
 		};
+		3BF1D1E92B371A7100798117 /* MainSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				3BF1D1E72B3716AA00798117 /* MainSwiftUI.swift */,
+				3BF1D1EA2B371A8100798117 /* Component */,
+			);
+			path = MainSwiftUI;
+			sourceTree = "<group>";
+		};
+		3BF1D1EA2B371A8100798117 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				3BF1D1EB2B371AA500798117 /* MainSwiftItem.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		3BF1D1F22B371D3D00798117 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3BF1D1F32B371D4F00798117 /* UserDefaultsKeys.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,6 +241,9 @@
 			dependencies = (
 			);
 			name = CombineEX2;
+			packageProductDependencies = (
+				3BF1D1EE2B371CEA00798117 /* Kingfisher */,
+			);
 			productName = CombineEX2;
 			productReference = 3B0193DA2B34600100007083 /* CombineEX2.app */;
 			productType = "com.apple.product-type.application";
@@ -231,6 +272,9 @@
 				Base,
 			);
 			mainGroup = 3B0193D12B34600100007083;
+			packageReferences = (
+				3BF1D1ED2B371CEA00798117 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 3B0193DB2B34600100007083 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -262,7 +306,11 @@
 				3B0193F92B3461F900007083 /* CoinData.swift in Sources */,
 				3B0193FB2B34679100007083 /* AppContext.swift in Sources */,
 				3B0193E22B34600100007083 /* ViewController.swift in Sources */,
+				3BF1D1EC2B371AA500798117 /* MainSwiftItem.swift in Sources */,
+				3BF1D1F42B371D4F00798117 /* UserDefaultsKeys.swift in Sources */,
 				3BF1D1D12B36CDA400798117 /* APIManager.swift in Sources */,
+				3BF1D1E82B3716AA00798117 /* MainSwiftUI.swift in Sources */,
+				3BF1D1F12B371CFF00798117 /* ImageManager.swift in Sources */,
 				3BF1D1E32B36FCDE00798117 /* UnSplash-AppContext.swift in Sources */,
 				3B0193F72B34614F00007083 /* ViewControllerViewModel.swift in Sources */,
 				3B0193DE2B34600100007083 /* AppDelegate.swift in Sources */,
@@ -493,6 +541,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3BF1D1ED2B371CEA00798117 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3BF1D1EE2B371CEA00798117 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BF1D1ED2B371CEA00798117 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3B0193E62B34600100007083 /* CombineEX2.xcdatamodeld */ = {
